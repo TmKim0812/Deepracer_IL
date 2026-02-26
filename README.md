@@ -38,8 +38,6 @@ At each timestep **t**, the policy receives:
 
 ## Policy Architecture
 
-The policy network maps inputs to control outputs.
-
 Possible model choices include:
 
 ### 1. MLP (Simple Regression)
@@ -51,7 +49,7 @@ Possible model choices include:
 - Improves stability in dynamic driving scenarios  
 - Useful for smoother and more robust control
 
-The final architecture can be selected based on task complexity and real-time constraints.
+The final architecture can be selected based on task complexity, performance and real-time constraints.
 
 ---
 
