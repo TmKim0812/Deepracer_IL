@@ -16,22 +16,23 @@ The design is modular and flexible, allowing different input representations and
 The overall control pipeline is structured as follows:
 
 
-Perception (Vision Process)
-│
-▼
-Input Features (z_t)
-
-Previous Action (a_{t-1})
-
-Vehicle State (s_t: speed, direction, etc.)
-│
-▼
-Policy Network
-(MLP / GRU / RNN)
-│
-▼
-Actions
-(Steer / Throttle / Straight / etc.)
+        +---------------------+
+        |     Perception      |
+        |  (Vision Process)   |
+        +----------+----------+
+                   |
+                   v
+        +---------------------+
+        |        Policy       |
+        |  (MLP / GRU / RNN)  |
+        +----------+----------+
+                   |
+                   v
+        +---------------------+
+        |        Actions      |
+        | (Steer / Throttle / |
+        |   Straight / etc.)  |
+        +---------------------+
 
 
 ---
