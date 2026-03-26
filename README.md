@@ -57,8 +57,23 @@ The final architecture can be selected based on task complexity, performance and
 
 The policy produces driving commands such as:
 
-- Steering angle  
-- Throttle / Acceleration  
+- Steering angle
+- Throttle / Acceleration
 - Discrete actions (e.g., straight / turn / brake)
 
 The exact action representation may vary depending on the deployment or simulation environment.
+
+---
+
+## Requirements
+
+- Python 3.8+
+- torch >= 2.0.0
+- torchvision >= 0.15.0
+- numpy >= 1.24.0
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
